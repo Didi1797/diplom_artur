@@ -3,9 +3,112 @@
 @import 'utils/mixins';//миксины scss
 
 //Общее
-//@import 'main/stylesheet';// шрифты
+@import 'main/stylesheet.scss';  // шрифты
 //@import 'main/reset'; // сброс стилей для кроссбраузерности
 //@import 'main/common'; // общие стили
 
 // дальше можно писать все стили сайта в этот файл, или писать их в компонентах
 @import 'components/header';
+
+html {
+    font-family: Roboto sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #006450; 
+    letter-spacing: 0.4px; 
+    
+}
+
+
+.container {
+    max-width: 1390px;
+    margin: 0  auto;
+    
+    
+}
+
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFFAEF;
+
+    &__row {
+        
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        
+    }
+
+
+    &__title {
+        
+        margin: 0px -10px;
+    }
+    
+    &__title span {
+        line-height: 20px;
+        padding: 10px;
+        
+    }
+
+    &__title span.logo1 {
+        font-style: italic;
+        font-size: 18px;
+        line-height: 26px;
+        color: #00C08B;
+        margin: 0 -10px;
+    }
+
+    &__title span.logo2 {
+        font-size: 20px;
+        line-height: 26px;
+        color: #00C08B;
+    }
+
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    background-image: url(../imgs/Rectangle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 882px; //как тут лучше сделать?
+    
+
+    &__content {
+        position: relative;
+        top: 151px;
+        display: flex;
+        justify-content: space-between;
+        
+        
+        
+    }
+
+    //рубрика - эксперементы
+    
+    &__title {
+        display: flex;
+        flex-direction: column;
+        font-size: 36px;
+        line-height: 44px;
+        /* identical to box height, or 122% */
+        color: #FFFAEF;
+        
+    }
+
+    button {
+        background-color: #E1FF32;
+        color: black;
+        border-style: none;
+        padding: 18px 72px;
+        margin-top: 10px;
+        
+    }
+}
+
+
