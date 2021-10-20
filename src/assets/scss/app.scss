@@ -85,8 +85,6 @@ html {
         display: flex;
         justify-content: space-between;
         
-        
-        
     }
 
     //рубрика - эксперементы
@@ -111,4 +109,24 @@ html {
     }
 }
 
+.section1 {
+    position: relative;
+    top: 25px;
+    border-top: 3px solid #006450 ;
+    
+    &__content {
+        position: relative;
+        top: 84px;
+        left: 404px;
+        max-width: 583px;
+    }
+
+    span {
+        font-size: 36px;
+        line-height: 44px;
+        /* or 122% */
+        text-align: center;
+        letter-spacing: 0.4px;
+    }
+}
 
