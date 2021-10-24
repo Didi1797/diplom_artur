@@ -1,0 +1,6 @@
+mixin card(args={background:'background-image: url( ./assets/imgs/card1)'})
+  .card(style=args.background)
+    .card__inner
+      .card__title=args.title
+      .card__description=args.description
+      button.card__btn Quick Add

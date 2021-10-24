@@ -1,5 +1,25 @@
-.container
-    .section1 
-        .section1__content
-            span Designed to reduce single-use plastic waste in your daily routine. Scientifically-proven to perform.
-
+include ../mixins/card
+.section1.container
+  .section1__title Designed to reduce single-use plastic waste in your daily routine. Scientifically-proven to perform.
+  +card({
+  background: 'background-image: url(../assets/imgs/card1.png)',
+  title: 'Shower Routine Set - $46',
+  description: 'All-natural shampoo, and, conditioner body wash formulated to nourish your hair & skin. Get $26 off.'
+  })      
+  +card({
+  background: 'background-image: url(../assets/imgs/card2.png)',
+  title: 'Summer Routine Set - $50',
+  description: 'Best sellers that are great for travel, including in our new deodorant Lemongrass scent. Get $15 off.'
+  })  
+  +card({
+  background: 'background-image: url(../assets/imgs/card3.png)',
+  title: 'Dental Routine Set - $36',
+  description: 'Toothpast, mouthwash, and floss formulated for healthy teeth & designed for healthy planet. Get $9 off.'
+  })  
+  +card({
+  background: 'background-image: url(../assets/imgs/card4.png)',
+  title: 'Hair Care Set — $46',
+  description: 'All natural shampoo and conditioner formulated to cleans & hydrate your hair. Get $15 off.'
+  })
+                
+                
